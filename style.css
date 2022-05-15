@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 全域設定 */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+*,*::after,*::after{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #3F5D45;
+}
+
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.menu {
+    display: flex;
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.menu >li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:30px ;
+    padding-right:30px ;
+    /* outline: #3F5D45 solid; */
+}
+
+.menu > li a img{
+    vertical-align: bottom;
+}
+
+/* 圖片取代文字技巧 */
+.logo a{
+    display:block;
+    background: url(./images/logo-all-dark.svg) no-repeat;
+    width: 210px;
+    height: 40px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    /* outline: #3F5D45 solid; */
+  }
+
+.banner{
+    background: url(./images/banner.png) no-repeat;
+    height: 496px;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-bottom: 60px;
+}
+
+.categories > h2{
+    width: 300px;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 24px;
+    background-color: #3F5D45;
+    color: white;
+}
+
+.categories__item > li a{
+    padding: 16px 0;
+    text-align: center;
+    font-size: 24px;
+    display: block;
+}
+
+.categories__item > li a:hover{
+    background-color: #EAF0ED;
+    color: #3F5D45;
+}
+
+.card >ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.card >ul li{
+margin-left: 20px;
+margin-bottom: 20px;
+position:relative;
+}
+
+.card__info{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 20px;
+    color: #3F5D45;
+}
+
+.card__info > p:nth-child(2){
+    font-weight: 900;
+}
+
+
+
+.card > .card__list >li >a{
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #EAF0ED;
+}
+
+.card > .card__list >li >a:hover{
+    background-color: #3F5D45;
+    color: white;
+}
+
+.tag{
+    position: absolute;
+    top: 0;
+    left:20px;
+    writing-mode: vertical-lr;
+    background-color: #3F5D45;
+    padding: 10px;
+    color: white;
+
+}
+
+.heart{
+    position: absolute;
+    top: 20px;
+    right:20px;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.pagination > li >a, .pagination > li >img{
+    padding: 16px 24px;
+    
+}
+
+.pagination > li >a:hover{
+    background-color: #3F5D45;
+    color: white;
+}
+
+
+
